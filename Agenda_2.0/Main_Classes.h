@@ -155,14 +155,19 @@ public:
         if (it != Events.end()) {   // Checks if the event is found.
 
             Events.erase(it, Events.end()); // And it gets deleted
+            system("cls");
             std::cout << "*************************************************************" << std::endl; 
             std::cout << "The event: " << Name << " was deleted successfully from agenda." << std::endl;    // Also a cute cout :3
             std::cout << "*************************************************************" << std::endl;
+            system("pause");
         }
         else {  // Else the event dosen't exist.
+            system("cls");
             std::cout << "*************************************************************" << std::endl;
             std::cout << " ERROR! The event: " << Name << " wasn't found in the agenda." << std::endl;  // A cute cout for the dummies :3
             std::cout << "*************************************************************" << std::endl;
+            system("pause");
+
 
         }
     }

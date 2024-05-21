@@ -245,7 +245,8 @@ int main() {
         case 2: {// Delete Event
             
             std::string Event_name; // A local variable
-
+            
+            system("cls");
             std::cout << std::endl;
             std::cout << "*Enter the name of the event to delete: "; // Pretty self explanatory
            
@@ -261,13 +262,14 @@ int main() {
 
 
             agenda.Write_file(); // Saves the changes.
+            system("cls");
             break;
         }
 
 
 
 
-        case 3: {
+        case 3: {   // Display the evets.
             const std::vector<Event>& events = agenda.get_Events(); // Calls the function to get the events from the events (needs refferance)
 
 
@@ -282,10 +284,13 @@ int main() {
                 break;
             }
 
-            else {  // Displayes the events.
+            else {
+                system("cls");
+
                 std::cout << "************************" << std::endl;
                 std::cout << "  Events in the agenda:" << std::endl;
                 std::cout << "************************" << std::endl;
+                std::cout << std::endl;
 
 
                 for (const auto& event : events) {
