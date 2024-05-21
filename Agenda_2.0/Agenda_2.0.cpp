@@ -283,6 +283,7 @@ int main() {
             }
 
             else {  // Displayes the events.
+                system("cls");
                 std::cout << "************************" << std::endl;
                 std::cout << "  Events in the agenda:" << std::endl;
                 std::cout << "************************" << std::endl;
