@@ -1,4 +1,9 @@
-#include"Main_Classes.h"
+#include"Agenda.h"
+#include"Event.h"
+
+#include <SFML/Audio.hpp>
+#include <thread>
+#include <chrono>
 
 
 static void Boot_up() {
