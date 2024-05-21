@@ -286,7 +286,7 @@ int main() {
 
             else {
                 system("cls");
-
+                
                 std::cout << "************************" << std::endl;
                 std::cout << "  Events in the agenda:" << std::endl;
                 std::cout << "************************" << std::endl;
