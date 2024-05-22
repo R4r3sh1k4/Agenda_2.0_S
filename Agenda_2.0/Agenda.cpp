@@ -1,8 +1,5 @@
 #include "Agenda.h"
 
-
-#include "Agenda.h"
-
 // Constructor to initialize agenda with a list of events
 Agenda::Agenda(const std::vector<Event>& Events_) : Events(Events_) {
     /*
