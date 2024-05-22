@@ -200,20 +200,60 @@ int main() {
             std::cin >> Num_people;  // Number of people.
             Click2();
 
+            if (std::cin.fail()) {
+                system("cls");
+                Error();
+                std::cout << "***************************************" << std::endl;
+                std::cout << "CRITICAL ERROR! EXITING THE APLICATION." << std::endl;
+                std::cout << "***************************************" << std::endl;
+                std::this_thread::sleep_for(std::chrono::seconds(3));
+                exit(0);
+            }
+
             std::cout << std::endl;
             std::cout << "Enter the day: "; // ! NOTE TO SELF: CHANGE THIS INTO SEPARATE INPUTS !   -Me from the future, I will not do that.
             std::cin >> Day;
             Click2();
+
+            if (std::cin.fail()) {
+                system("cls");
+                Error();
+                std::cout << "***************************************" << std::endl;
+                std::cout << "CRITICAL ERROR! EXITING THE APLICATION." << std::endl;
+                std::cout << "***************************************" << std::endl;
+                std::this_thread::sleep_for(std::chrono::seconds(3));
+                exit(0);
+            }
 
             std::cout << std::endl;
             std::cout << "Enter the month (1, 2, 3,...): ";
             std::cin >> Month;
             Click2();
 
+            if (std::cin.fail()) {
+                system("cls");
+                Error();
+                std::cout << "***************************************" << std::endl;
+                std::cout << "CRITICAL ERROR! EXITING THE APLICATION." << std::endl;
+                std::cout << "***************************************" << std::endl;
+                std::this_thread::sleep_for(std::chrono::seconds(3));
+                exit(0);
+            }
+
             std::cout << std::endl;
             std::cout << "Enter year: ";
             std::cin >> Year;
             Click2();
+
+            if (std::cin.fail()) {
+                system("cls");
+                Error();
+                std::cout << "***************************************" << std::endl;
+                std::cout << "CRITICAL ERROR! EXITING THE APLICATION." << std::endl;
+                std::cout << "***************************************" << std::endl;
+                std::this_thread::sleep_for(std::chrono::seconds(3));
+                exit(0);
+            }
 
             
 
@@ -224,12 +264,32 @@ int main() {
             std::cout << "Enter event name: ";
             std::getline(std::cin, Name);   // The main name for the event.
             Click2();
-            
+
+            if (std::cin.fail()) {
+                system("cls");
+                Error();
+                std::cout << "***************************************" << std::endl;
+                std::cout << "CRITICAL ERROR! EXITING THE APLICATION." << std::endl;
+                std::cout << "***************************************" << std::endl;
+                std::this_thread::sleep_for(std::chrono::seconds(3));
+                exit(0);
+            }
+
 
             std::cout << std::endl;
             std::cout << "Enter event info: ";
             std::getline(std::cin, Info);   
             Click2();
+
+            if (std::cin.fail()) {
+                system("cls");
+                Error();
+                std::cout << "***************************************" << std::endl;
+                std::cout << "CRITICAL ERROR! EXITING THE APLICATION." << std::endl;
+                std::cout << "***************************************" << std::endl;
+                std::this_thread::sleep_for(std::chrono::seconds(3));
+                exit(0);
+            }
 
             
             std::cout << std::endl;
