@@ -1,7 +1,5 @@
 #include "Event.h"
 
-#include "Event.h"
-
 // Constructor to initialize an event with given details
 Event::Event(const int& Number_of_people_, const int& Day_, const int& Month_, const int& Year_,
     const std::string& Name_, const std::string& Info_)
